@@ -208,8 +208,8 @@ a:hover {
 
   color: var(--secondary-color);
   text-align: center;
-  min-height: 40vh; /* Vertically fills most of the screen */
-  padding: 0; /* Remove top-heavy padding */
+  min-height: 40vh;
+  padding-top: 80px; /* 👈 this solves the overlap */
 }
 
 .hero-section::before {
