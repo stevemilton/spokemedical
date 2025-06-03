@@ -196,12 +196,12 @@ a:hover {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background-image: url("images/hero-bg.jpg"); /* 👈 Update path as needed */
+  background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--white);
   padding: 10rem 0 5rem;
+  color: var(--white);
   text-align: center;
 }
 
