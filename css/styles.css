@@ -195,12 +195,13 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
+  position: relative;
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 10rem 0 5rem;
-  color: var(--white);
+  color: var(--secondary-color);
+  padding: 8rem 0 5rem;
   text-align: center;
 }
 
@@ -208,7 +209,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* 👈 Optional dark overlay */
+  background: #777; /* ← this is causing the full grey */
   z-index: 0;
 }
 
