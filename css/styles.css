@@ -224,6 +224,10 @@ a:hover {
 .hero-section .container {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: none;        /* ✅ remove any fixed width limits */
+  padding: 0;             /* ✅ remove internal padding */
+  margin: 0;              /* ✅ ensure no extra margin pushing it down */
 }
 
 .hero-section h1,
