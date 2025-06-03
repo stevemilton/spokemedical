@@ -196,7 +196,7 @@ a:hover {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background-image: url("images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.jpg"); /* ← Corrected path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* ✅ translucent dark overlay */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 
