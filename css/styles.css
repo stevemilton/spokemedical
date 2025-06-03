@@ -208,7 +208,6 @@ a:hover {
 
   color: var(--secondary-color);
   text-align: center;
-
   min-height: 40vh; /* Vertically fills most of the screen */
   padding: 0; /* Remove top-heavy padding */
 }
