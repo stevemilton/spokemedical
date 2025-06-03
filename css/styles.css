@@ -412,6 +412,23 @@ a:hover {
   color: var(--primary-color);
 }
 
+.footer-contact address p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact svg {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  display: inline-block;
+  fill: currentColor;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
