@@ -209,7 +209,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: #777; /* ← this is causing the full grey */
+  background: rgba(0, 0, 0, 0.4); /* ✅ translucent dark overlay */
   z-index: 0;
 }
 
