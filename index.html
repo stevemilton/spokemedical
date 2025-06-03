@@ -160,6 +160,59 @@ title: Home
   </div>
 </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>SPOKE MEDICAL</h2>
+          <p>Redefining medical innovation</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="zephyr.html">Zephyr</a></li>
+              <li><a href="market.html">Market</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: info@spokemedical.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/company/spokemedical/" target="_blank" rel="noopener">Spoke Medical</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Spoke Medical. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const mainNav = document.querySelector('.main-nav');
+      
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('active');
+          const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+          menuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
 <script>
   function showTab(tabId, event) {
     const tabPanes = document.querySelectorAll('.tab-pane');
