@@ -196,13 +196,21 @@ a:hover {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background-image: url("../images/hero-bg.jpg"); /* ← Corrected path */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   color: var(--secondary-color);
-  padding: 8rem 0 5rem;
   text-align: center;
+
+  min-height: 80vh; /* Vertically fills most of the screen */
+  padding: 0; /* Remove top-heavy padding */
 }
 
 .hero-section::before {
