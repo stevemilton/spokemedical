@@ -814,4 +814,30 @@ a:hover {
   font-size: 1rem;
   color: var(--primary-color);
 }
+.market-highlight {
+  width: 100%;
+  background-color: var(--primary-color); /* Teal background */
+  color: var(--white);
+  padding: 3rem 1rem;
+  margin: 3rem 0;
+}
+
+.market-highlight-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.market-highlight h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.market-highlight ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
