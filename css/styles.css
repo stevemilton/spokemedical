@@ -800,83 +800,7 @@ a:hover {
 .fade-in {
   animation: fadeIn 0.8s ease forwards;
 }
-/* Timeline Custom Styles */
-.timeline-date {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--secondary-color);
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content h3 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin: 0;
-  color: var(--dark-gray);
-}
-.market-trends {
-  background-color: var(--light-gray);
-  padding: 2rem;
-  border-left: 6px solid var(--primary-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  margin: 2rem 0;
-}
-
-.market-trends h3 {
-  color: var(--primary-color);
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
-.market-trends ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.market-trends li {
-  position: relative;
-  padding-left: 1.75rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.market-trends li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-  font-size: 1rem;
-  color: var(--primary-color);
-}
-.market-highlight {
-  width: 100%;
-  background-color: var(--primary-color); /* Teal background */
-  color: var(--white);
-  padding: 3rem 1rem;
-  margin: 3rem 0;
-}
-
-.market-highlight-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.market-highlight h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--white);
-  text-align: center;
-}
-
-.market-highlight ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-  
+/* --- FIXED TIMELINE SECTION --- */
 .timeline-cards {
   display: flex;
   flex-direction: column;
@@ -905,18 +829,19 @@ a:hover {
   font-size: 0.9rem;
 }
 
-.timeline-content h3 {
+.timeline-card h3 {
   margin-top: 0;
   font-size: 1.2rem;
   color: var(--secondary-color);
 }
 
-.timeline-content p {
+.timeline-card p {
   margin: 0.5rem 0 0;
   color: var(--dark-gray);
   font-size: 0.95rem;
 }
 
+/* Mobile Fixes for Timeline */
 @media (max-width: 768px) {
   .timeline-card {
     padding-left: 2rem;
@@ -926,47 +851,51 @@ a:hover {
     left: 1rem;
     top: -1.2rem;
   }
-
-  /* Market Drivers Highlight Section */
-.market-drivers-section {
-  background-color: var(--light-gray);
-  padding: 3rem 0;
-  width: 100%;
 }
-
+/* --- FIXED MARKET HIGHLIGHT SECTION --- */
 .market-highlight {
-  max-width: 1100px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 1rem;
+  margin: 3rem 0;
+}
+
+.market-highlight-inner {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  background: var(--white);
-  border-left: 6px solid var(--primary-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.market-highlight-inner h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+.market-highlight h3 {
+  font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--white);
+  text-align: center;
 }
 
-.market-highlight-inner ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.market-highlight-inner li {
-  margin-bottom: 1rem;
+.market-highlight ul {
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
-  padding-left: 1.5rem;
-  position: relative;
+  margin: 0;
 }
 
-.market-highlight-inner li::before {
-  content: "✔";
-  color: var(--primary-color);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+.market-highlight li {
+  margin-bottom: 1rem;
 }
 
+/* Optional Mobile Refinement */
+@media (max-width: 768px) {
+  .market-highlight {
+    padding: 2rem 1rem;
+  }
+
+  .market-highlight h3 {
+    font-size: 1.5rem;
+  }
+
+  .market-highlight ul {
+    padding-left: 1.2rem;
+  }
+}
