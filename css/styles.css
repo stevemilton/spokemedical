@@ -778,3 +778,40 @@ a:hover {
   margin: 0;
   color: var(--dark-gray);
 }
+.market-trends {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-left: 6px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 2rem 0;
+}
+
+.market-trends h3 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.market-trends ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.market-trends li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.market-trends li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
