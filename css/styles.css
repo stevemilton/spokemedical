@@ -194,7 +194,6 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-/* Hero Section */
 .hero-section {
   position: relative;
   display: flex;
@@ -209,8 +208,8 @@ a:hover {
 
   color: var(--secondary-color);
   text-align: center;
-  min-height: 40vh;
-  padding-top: 80px; /* 👈 this solves the overlap */
+  min-height: 50vh;             /* ⬅️ give a little more room for metrics */
+  padding: 6rem 2rem 4rem;       /* ⬅️ better top and side spacing */
 }
 
 .hero-section::before {
@@ -225,9 +224,9 @@ a:hover {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: none;        /* ✅ remove any fixed width limits */
-  padding: 0;             /* ✅ remove internal padding */
-  margin: 0;              /* ✅ ensure no extra margin pushing it down */
+  max-width: 1200px;            /* ✅ Keeps content from stretching too wide */
+  margin: 0 auto;
+  padding: 0;
 }
 
 .hero-section h1,
@@ -240,11 +239,22 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.hero-cta {
+.metrics-grid {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  background-color: var(--white);
+  color: var(--secondary-color);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 200px;
+  text-align: center;
 }
 
 /* Metrics Grid */
