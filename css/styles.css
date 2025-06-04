@@ -481,6 +481,7 @@ a:hover {
 .section-header {
   max-width: 800px;
   margin: 0 auto 3rem;
+  text-align: center;
 }
 
 /* Tab System */
