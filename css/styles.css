@@ -877,64 +877,52 @@ a:hover {
   line-height: 1.6;
 }
   
-/* Vertical Timeline */
-.timeline-section {
-  background-color: var(--light-gray);
-  padding: 4rem 1rem;
-}
-
 .timeline-vertical {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   border-left: 4px solid var(--primary-color);
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   margin-top: 2rem;
-  position: relative;
 }
 
 .timeline-entry {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .timeline-entry::before {
   content: "";
   position: absolute;
-  top: 0.35rem;
-  left: -1.35rem;
-  width: 1rem;
-  height: 1rem;
+  top: 0.4rem;
+  left: -1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
   background-color: var(--primary-color);
   border-radius: 50%;
-  border: 3px solid var(--white);
-  z-index: 2;
+  border: 2px solid var(--white);
 }
 
 .timeline-year {
-  font-weight: 700;
-  color: var(--primary-color);
+  font-weight: 600;
   font-size: 1.1rem;
-  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.3rem;
 }
 
 .timeline-text h3 {
-  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .timeline-text p {
-  margin: 0;
   font-size: 0.95rem;
+  margin: 0;
   color: var(--dark-gray);
 }
 
 @media (max-width: 768px) {
   .timeline-vertical {
-    padding-left: 1.25rem;
-    border-left-width: 3px;
-  }
-
-  .timeline-entry {
     padding-left: 1rem;
   }
 
