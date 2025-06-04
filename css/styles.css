@@ -632,7 +632,18 @@ a:hover {
   .two-column-grid {
     grid-template-columns: 1fr;
   }
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+  }
 
 
 /* Responsive Styles */
