@@ -623,6 +623,18 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Force 2x2 layout for specific grid */
+.two-column-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   h1 {
