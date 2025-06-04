@@ -482,9 +482,6 @@ a:hover {
   max-width: 800px;
   margin: 0 auto 3rem;
 }
-.section-header.centered {
-  text-align: center;
-}
 
 /* Tab System */
 .tab-container {
