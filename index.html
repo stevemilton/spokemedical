@@ -106,35 +106,54 @@
         <button class="tab-btn" onclick="showTab('edge', event)" role="tab" aria-selected="false" id="edge-tab">Competitive Edge</button>
       </div>
 
-      <div class="benefits-grid three-column-grid">
-  <div class="benefit-card">
-    <h4>Lower Litigation Risk</h4>
-    <p>Fewer complications lead to fewer complaints. Zephyr aligns with updated ENT UK guidance on consent, safety, and acoustic exposure.</p>
-  </div>
-  <div class="benefit-card">
-    <h4>Improved Patient Trust & Retention</h4>
-    <p>A more comfortable experience leads to better compliance and return visits, creating a positive feedback loop: better outcomes → happier patients → more referrals.</p>
-  </div>
-  <div class="benefit-card">
-    <h4>Confidence in ENT Compliance</h4>
-    <p>Designed with ENT UK guidance in mind, Zephyr allows clinicians to feel fully supported in patient safety, documentation, and risk management.</p>
-  </div>
-</div>
+      <div class="tab-content">
 
-        <div id="clinical" class="tab-pane" role="tabpanel" aria-labelledby="clinical-tab">
-          <h3>Reduced Cognitive Load</h3>
-          <p>Low-noise operation reduces clinician fatigue and improves concentration. Enables better communication with nurses due to overall lower in-clinic noise.</p>
+        <!-- Patient Safety Tab -->
+        <div id="safety" class="tab-pane active" role="tabpanel" aria-labelledby="safety-tab">
+          <h3>Greater Confidence in Patient Safety</h3>
+          <p>Zephyr is engineered to prevent common adverse events including vertigo, trauma, and tinnitus. It significantly improves the experience for both general and high-risk patients.</p>
 
-          <h4>Faster, More Reliable Procedures</h4>
-          <p>Anti-block design minimises tip clearing and interruptions. Keeps suction consistent—even with fine debris—allowing for higher daily throughput.</p>
-
-          <h4>Ergonomic and Intuitive Handling</h4>
-          <p>Lightweight and balanced with fingertip suction control. Reduces hand strain, especially during complex or extended procedures.</p>
-
-          <h4>Minimal Training Required</h4>
-          <p>Plug-and-play usability with no learning curve. Seamlessly integrates into current workflows and clinic setup.</p>
+          <div class="benefits-grid three-column-grid">
+            <div class="benefit-card">
+              <h4>Lower Litigation Risk</h4>
+              <p>Fewer complications lead to fewer complaints. Zephyr aligns with updated ENT UK guidance on consent, safety, and acoustic exposure.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Improved Patient Trust & Retention</h4>
+              <p>A more comfortable experience leads to better compliance and return visits, creating a positive feedback loop: better outcomes → happier patients → more referrals.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Confidence in ENT Compliance</h4>
+              <p>Designed with ENT UK guidance in mind, Zephyr allows clinicians to feel fully supported in patient safety, documentation, and risk management.</p>
+            </div>
+          </div>
         </div>
 
+        <!-- Clinical Excellence Tab -->
+        <div id="clinical" class="tab-pane" role="tabpanel" aria-labelledby="clinical-tab">
+          <h3>Improving Clinical Workflow</h3>
+
+          <div class="benefits-grid three-column-grid">
+            <div class="benefit-card">
+              <h4>Reduced Cognitive Load</h4>
+              <p>Low-noise operation reduces clinician fatigue and improves concentration. Enables better communication with nurses due to overall lower in-clinic noise.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Faster, More Reliable Procedures</h4>
+              <p>Anti-block design minimises tip clearing and interruptions. Keeps suction consistent—even with fine debris—allowing for higher daily throughput.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Ergonomic and Intuitive Handling</h4>
+              <p>Lightweight and balanced with fingertip suction control. Reduces hand strain, especially during complex or extended procedures.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Minimal Training Required</h4>
+              <p>Plug-and-play usability with no learning curve. Seamlessly integrates into current workflows and clinic setup.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competitive Edge Tab -->
         <div id="edge" class="tab-pane" role="tabpanel" aria-labelledby="edge-tab">
           <h3>Zephyr vs. Traditional Microsuction</h3>
           <table class="comparison-table">
@@ -179,6 +198,7 @@
             </tbody>
           </table>
         </div>
+
       </div>
     </div>
   </div>
