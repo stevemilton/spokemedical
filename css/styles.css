@@ -568,12 +568,26 @@ a:hover {
   color: #ff4d4d;
 }
 
-/* Clinical Benefits Grid */
+/* Default Benefits Grid (e.g., Customer Segments: 3-column) */
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+}
+
+/* Business Model Grid (2x2) */
+.business-model-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .business-model-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .benefit-card {
