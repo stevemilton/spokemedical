@@ -817,73 +817,6 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
-
-.timeline-cards {
-  position: relative;
-  margin-top: 3rem;
-  padding-left: 2rem;
-  border-left: 4px solid var(--primary-color);
-}
-
-.timeline-card {
-  position: relative;
-  margin: 2rem 0;
-  padding-left: 2rem;
-}
-
-.timeline-badge {
-  position: absolute;
-  top: 0;
-  left: -2.6rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  background: var(--primary-color);
-  color: var(--white);
-  font-weight: bold;
-  font-size: 0.9rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 4px var(--white);
-}
-
-.timeline-content {
-  background-color: var(--light-gray);
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-  font-size: 1.3rem;
-  color: var(--secondary-color);
-}
-
-.timeline-content p {
-  margin: 0.5rem 0 0;
-  color: var(--dark-gray);
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .timeline-cards {
-    padding-left: 1rem;
-    border-left: 3px solid var(--primary-color);
-  }
-
-  .timeline-badge {
-    left: -1.8rem;
-    width: 2rem;
-    height: 2rem;
-    font-size: 0.8rem;
-  }
-
-  .timeline-content {
-    padding: 1.25rem 1.5rem;
-  }
-}
   
 /* --- FIXED MARKET HIGHLIGHT SECTION --- */
 .market-highlight {
@@ -931,4 +864,54 @@ a:hover {
   .market-highlight ul {
     padding-left: 1.2rem;
   }
+}
+  
+/* --- FIXED TIMELINE SECTION --- */
+.timeline-cards {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 2rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.timeline-card {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+
+.timeline-badge {
+  position: absolute;
+  top: 0;
+  left: -2.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px var(--white);
+}
+
+.timeline-content {
+  background-color: var(--light-gray);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.timeline-content p {
+  margin: 0.5rem 0 0;
+  color: var(--dark-gray);
+  font-size: 1rem;
 }
