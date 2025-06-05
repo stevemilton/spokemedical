@@ -1553,4 +1553,17 @@ p {
   outline-offset: 4px;
   box-shadow: 0 0 0 8px rgba(5, 176, 162, 0.2);
 }
+/* UNIVERSAL BUTTON ENHANCEMENTS - Works on all screen sizes */
+.btn {
+  border-radius: 50px !important;
+  padding: 1rem 2rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid transparent !important;
+}
+
+.btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
 
