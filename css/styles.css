@@ -876,4 +876,206 @@ a:hover {
       font-size: 1rem;
     }
   }
-</style>
+
+/* ===== ENHANCED VISUAL EFFECTS ===== */
+/* Add these enhancements to your existing styles.css */
+
+/* Enhanced button hover effects */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced card animations */
+.metric-card, .benefit-card, .team-member, .stat-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metric-card:hover, .team-member:hover, .stat-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced navigation with subtle animations */
+.main-nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+  width: 100%;
+}
+
+/* Enhanced hero section with subtle animation */
+.hero-section {
+  background-attachment: fixed; /* Parallax effect */
+}
+
+.hero-section .container {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Enhanced tab system */
+.tab-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(5, 176, 162, 0.1), transparent);
+  transition: left 0.4s;
+}
+
+.tab-btn:hover::before {
+  left: 100%;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, rgba(5, 176, 162, 0.1), rgba(37, 53, 81, 0.05));
+}
+
+/* Enhanced product highlight section */
+.product-image img {
+  transition: transform 0.4s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Smooth scroll enhancements */
+html {
+  scroll-padding-top: 200px; /* Account for fixed header */
+}
+
+/* Enhanced focus states for accessibility */
+.btn:focus, .tab-btn:focus, .main-nav a:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(5, 176, 162, 0.2);
+}
+
+/* Loading animation for interactive elements */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+/* Enhanced comparison table */
+.comparison-table tr {
+  transition: background-color 0.2s ease;
+}
+
+.comparison-table tr:hover {
+  background-color: rgba(5, 176, 162, 0.05);
+}
+
+/* Subtle entrance animations for sections */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.section:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.section:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+/* Enhanced CTA section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #048A7E 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Enhanced footer */
+.footer {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #1E2A40 100%);
+}
+
+/* Mobile enhancements */
+@media (max-width: 768px) {
+  .btn:hover {
+    transform: none; /* Disable hover effects on mobile */
+  }
+  
+  .metric-card:hover, .team-member:hover, .stat-item:hover {
+    transform: none;
+  }
+  
+  .hero-section {
+    background-attachment: scroll; /* Better mobile performance */
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
