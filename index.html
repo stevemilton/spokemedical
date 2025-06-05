@@ -245,7 +245,7 @@
   </div>
 </footer>
 
-  <script>
+   <script>
     // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function() {
       const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -259,22 +259,24 @@
         });
       }
     });
-   <script src="js/enhanced-interactions.js"></script>
+
+    // Tab function
+    function showTab(tabId, event) {
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      tabPanes.forEach(pane => pane.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      tabButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+
+      event.target.classList.add('active');
+      event.target.setAttribute('aria-selected', 'true');
+    }
+  </script>
+  
+  <script src="js/enhanced-interactions.js"></script>
 </body>
 </html>
-<script>
-  function showTab(tabId, event) {
-    const tabPanes = document.querySelectorAll('.tab-pane');
-    tabPanes.forEach(pane => pane.classList.remove('active'));
-    document.getElementById(tabId).classList.add('active');
-
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    tabButtons.forEach(btn => {
-      btn.classList.remove('active');
-      btn.setAttribute('aria-selected', 'false');
-    });
-
-    event.target.classList.add('active');
-    event.target.setAttribute('aria-selected', 'true');
-  }
-</script>
